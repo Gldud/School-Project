@@ -6,18 +6,60 @@
   <title>Document</title>
 </head>
 <body>
-<input type = "text">
+<label for="userid">아이디</label>
+<input type = "text" id = "userid" placeholder="아이디를 입력하세요">
 <!-- 한줄 입력란 -->
+<!--  placeholder는 HTML5 IE8,7,6작동하지 않음 Javascript 사용해야 됌-->
 <input type ="radio">
 <!-- 단일선택버튼 -->
-<input type = "submit" value="submit">
-<input type = "password">
+<input type = "submit" value="submit" >
+<label for="psw"></label>
+<input type = "password" id = "psw" value = "" placeholder="비밀번호 입력하세요">
 <!--비밀번호  -->
 <input type = "checkbox">
 <!--다중선택버튼  -->
 <input type = "button" value="확인">
 <!--범용버튼  -->
-<input type = "reset">
+<input type = "reset" value="초기화">
+<!--초기화  -->
+<input type = "file">
+<!--css로 디자인 변경 불가 제이커리로 가능, 까다로움  -->
+<input type = "hidden">
+<label for="userid"><input type = "text" id = "userid" placeholder="아이디를 입력하세요">
+
+<label for="female">여자</label>
+<input type="radio" name="gender" id="female">
+<label for="male">남자</label>
+<input type="radio" name="gender" id=male>
+<br>
+
+<label for="rabbit">토끼</label>
+<input type="checkbox" id = "rabbit" name = "animal">
+<label for="tiger">호랑이</label>
+<input type="checkbox" id = "tiger" name = "animal">
+<label for="lion">사자</label>
+<input type="checkbox" id = "lion" name = "animal">
+<label for="dog">강아지</label>
+<input type="checkbox" id = "dog" name = "animal">
+
+<br>
+
+
+<select>
+<option> green </option>
+<option> red </option>
+<option> black</option>
+
+
+</select><br>
+
+<textarea name="name" rows="8" cols="40" placeholder="내용을 입력"></textarea>
+
+
+
+
+
+
 
 
 
