@@ -3,19 +3,19 @@
 <head>
   <meta charset="UTF-8">
 
-  <title>Document</title>
+  <title>input type</title>
 </head>
 <body>
 <label for="userid">아이디</label>
 <input type = "text" id = "userid" placeholder="아이디를 입력하세요">
 <!-- 한줄 입력란 -->
+<label for="psw">비밀번호</label>
+<input type = "password" id = "psw" value = "" placeholder="비밀번호 입력하세요">
+<!--비밀번호  -->
 <!--  placeholder는 HTML5 IE8,7,6작동하지 않음 Javascript 사용해야 됌-->
 <input type ="radio">
 <!-- 단일선택버튼 -->
 <input type = "submit" value="submit" >
-<label for="psw"></label>
-<input type = "password" id = "psw" value = "" placeholder="비밀번호 입력하세요">
-<!--비밀번호  -->
 <input type = "checkbox">
 <!--다중선택버튼  -->
 <input type = "button" value="확인">
@@ -30,7 +30,9 @@
 <label for="female">여자</label>
 <input type="radio" name="gender" id="female">
 <label for="male">남자</label>
-<input type="radio" name="gender" id=male>
+<input type="radio" name="gender" id="male">
+<label for="transgender">트렌스젠더</label>
+<input type="radio" name="gender" id="trasngender">
 <br>
 
 <label for="rabbit">토끼</label>
@@ -44,7 +46,6 @@
 
 <br>
 
-
 <select>
 <option> green </option>
 <option> red </option>
@@ -54,6 +55,7 @@
 </select><br>
 
 <textarea name="name" rows="8" cols="40" placeholder="내용을 입력"></textarea>
+<!-- 버튼 계열은 Label달 필요 없음 -->
 
 
 
