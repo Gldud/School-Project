@@ -6,19 +6,27 @@
   <title>Table</title>
 </head>
 <body>
-  <!--  -->
+
   <table border="1" width="400">
+    <caption>시간표</caption>
+<colgroup>
+<col width="100">
+<col width="150">
+<col width="50">
+
+</colgroup>
+
 <thead>
   <tr>
-    <th>사과</th>
-    <th>오렌지</th>
+    <th colspan="2">사과</th>
+
     <th>딸기</th>
   </tr>
   <tr>
 </thead>
 <tbody>
   <tr>
-  <td>사과</td>
+  <td >사과</td>
   <td>오렌지</td>
   <td>딸기</td>
 </tr>
@@ -33,15 +41,15 @@
 </tfoot>
   </table>
 <table border="1" width="400">
-
+  <caption>시간표</caption>
 <tbody>
 <tr>
-<th>사과</th>
+<th rowspan="2">사과</th>
 <td>오렌지</td>
 <td>딸기</td>
 </tr>
 <tr>
-<th>사과</th>
+
 <td>오렌지</td>
 <td>딸기</td>
 </tr>
@@ -50,7 +58,10 @@
 </table>
 <!-- Html5에서는 테이블닫지 않아도 됌 근데 닫아주는게 좋음 하위버전-->
 <!-- tfoot위치는 thead랑 tbody사이에 있음 웹근성과 관련있음 thead랑 tfoot은 굳이 필요없음-->
+<th scope="col">사과</th>
+<th scope="row">사과</th>
 
+  <!-- table>(thead>tr*2>th{title$}*6)+(tbody>tr*6>td{title$$}*6) -->
 
 </body>
 </html>

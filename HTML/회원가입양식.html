@@ -8,56 +8,63 @@
 <h1>개인회원 가입</h1>
 <form action = "회원가입양식.html" method ="post">
   <ul>
-    <li>회원 아이디 <label for="userid"></label><input type="text" name="" value="morilla" id="userid">&nbsp<input type="button" name="" value="아이디 중복조회">(영문자 또는 숫자, 4~15자리)</li>
-    <li>비밀번호 &nbsp<label for="psw"></label><input type="password" name="" value="oooo" id="psw">&nbsp변경 시에만 입력하십시오. (영문자 또는 숫자, 4~12자리)</li>
-    <li>비밀번호 확인 &nbsp<label for="psw2"></label><input type="password" name="" value="oooo" id="psw2"></li>
-    <li>회원성명 &nbsp<label for="username"></label><input type="text" name="" value="한국인터넷빌링" id="username"></li>
-    <li>주민등록번호 &nbsp <label for="idnum1"></label><input type="text" name="" value="730924" id = "idnum1">-<label for = "idnum2"></label><input type="password" name="" value="ooooooo" id = "idnum2"></li>
+    <li>회원 아이디 <label for="userid"></label><input type="text" name="" value="morilla" id="userid" />&nbsp<input type="button" name="" value="아이디 중복조회" /><span>(영문자 또는 숫자, 4~15자리)</span></li>
+    <li>비밀번호 &nbsp<label for="psw"></label><input type="password" name="" value="oooo" id="psw"/>&nbsp<span>변경 시에만 입력하십시오.(영문자 또는 숫자, 4~12자리) </span></li>
+    <li>비밀번호 확인 &nbsp<label for="psw2"></label><input type="password" name="" value="oooo" id="psw2" /></li>
+    <li>회원성명 &nbsp<label for="username"></label><input type="text" name="" value="한국인터넷빌링" id="username" /></li>
+    <li>주민등록번호 &nbsp <label for="idnum1"></label><input type="text" name="" value="730924" id = "idnum1" />-<label for = "idnum2"></label><input type="password" name="" value="ooooooo" id = "idnum2" /></li>
     <li>전화번호 &nbsp
+      <!-- name이랑 id 처음에 숫자 안되고 underbar를 제외한 특수문자 안됌 -->
      <label for="num1"></label>
       <select id="num1">
-      <option> 02 </option>
-      <option> 031 </option>
-      <option> 051 </option>
+      <option value="">02</option>
+      <option value="">031</option>
+      <option value="">051</option>
     </select>
-    -  <label for="num2"></label><input type="text" name="" value="812" id ="num2" >
-    - <label for="num3"></label> <input type="text" name="" value="6711" id="num3"></li>
+    -  <label for="num2"></label><input type="text" name="" value="812" id ="num2" />
+    - <label for="num3"></label> <input type="text" name="" value="6711" id="num3" /></li>
     <li>휴대폰번호 &nbsp
       <label for="cell"></label>
        <select id="cell">
-       <option> 011 </option>
-       <option> 010 </option>
+       <option value="">011</option>
+       <option value="">010</option>
 
      </select>
-     - <label for = "num4"></label><input type="text" name="" value="812" id="num4">
-     - <label for = "num5"></label><input type="text" name="" value="6711" id="num5"></li>
-    <li>주소 &nbsp <label for="ad"></label><input type="text" name="" value="156" id="ad">-<label for="ad2"></label><input type="text" name="" value="030" id="ad2">&nbsp<input type="button" name="" value="우편번호 검색"><br>
-    <label for="ad3"></label> <input type="text" name="" value="서울 동작구 상도동"><br>
-  <label for="ad4"></label><input type="text" name="" value="31-13"></li>
-    <li>E-mail &nbsp<label for="email"></label><input type="text" name="" value="hanbil" id="email">@
+     - <label for = "num4"></label><input type="text" name="" value="812" id="num4" />
+     - <label for = "num5"></label><input type="text" name="" value="6711" id="num5" /></li>
+    <li>주소 &nbsp <label for="ad"></label><input type="text" name="" value="156" id="ad" />-<label for="ad2"></label><input type="text" name="" value="030" id="ad2" />&nbsp<input type="button" name="" value="우편번호 검색" /><br>
+    <label for="ad3"></label> <input type="text" name="" value="서울 동작구 상도동" /><br />
+  <label for="ad4"></label><input type="text" name="" value="31-13"/></li>
+    <li>E-mail &nbsp<label for="email"></label><input type="text" name="" value="hanbil" id="email" />@
     <label for = "email1">
     <select id="email1">
-    <option>hanbil.com</option>
-    <option>hanmail.net</option>
-    <option>gmail.com</option>
-  </select><br>
-    <label for="email3"></label><input type="text" name="" value="hanbil" id="email3">@
+    <option value="">hanbil.com</option>
+
+    <option value = "">hanmail.net</option>
+    <option value = "">gmail.com</option>
+  </select><br />
+    <label for="email3"></label><input type="text" name="" value="hanbil" id="email3" />@
     <label for = "email4">
     <select id="email4">
-    <option>hanbil.com</option>
-    <option>hanmail.net</option>
-    <option>gmail.com</option>
+    <option value = "">hanbil.com</option>
+    <option value = "">hanmail.net</option>
+    <option value = "">gmail.com</option>
   </select>
   </li>
-    <li>창조 E-mail <br>
-    *창조 E-mail이란?<br>
-E-mail고지를 받는 고객제서 고지를 정상적으로 받으실 수 없을 경우 업무의 공백을 막기위한 서비스로 창조 E-mail을 등록해 놓으시면
- E-mail 고지서에 등록하신 두 개의 E-mail로 고지해 드립니다. <strong>단, 한국전력과 서울도시가스에만 해당됩니다.</strong></li>
-    <li>한빌 부가서비스 안내수신&nbsp<label for = "yes">예</label><input type="radio" name="yesorno" value="" id = "yes" >
-    <label for = "no">아니오</label><input type = "radio" name = "yesorno" value="" id = "no"></li>
-    <li>추천인 아이디 &nbsp <input type="text" name="" value="hanbil"></li>
+    <li>창조 E-mail <br />
+    *창조 E-mail이란?<br />
+    E-mail고지를 받는 고객께서 고지를 정상적으로 받으실 수 없을 경우 업무의 공백을 막기위한 서비스로 창조 E-mail을 등록해 놓으시면<br />
+    E-mail 고지서에 등록하신 두 개의 E-mail로 고지해 드립니다. <strong>단, 한국전력과 서울도시가스에만 해당됩니다.</strong></li>
+    <li>한빌 부가서비스 안내수신&nbsp<label for = "yes">예</label><input type="radio" name="yesorno" value="" id = "yes" / >
+    <label for = "no">아니오</label><input type = "radio" name = "yesorno" value="" id = "no" /></li>
+    <li>추천인 아이디 &nbsp <input type="text" name="" value="hanbil" /></li>
   </ul>
-  <input type="submit" name="" value="확인">&nbsp <input type="reset" name="" value="재입력">
+  <input type="submit" name="" value="확인">&nbsp <input type="reset" name="" value="재입력" />
 </form>
+<!--  인라인이 블록을 감싸면 안됌 li를 span으로 감싸면안됌-->
+<label for = "">앞자리</label>
+<input type ="text" placeholder="앞자리">
+<label for = "" class = "ir"><input type ="text" placeholder="중간자리"></label>
+<label for = "" class = "ir"><input type ="text" placeholder="뒷자리"></label>
 </body>
 </html>
