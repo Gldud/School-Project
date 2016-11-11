@@ -6,16 +6,27 @@
 <style>
 
 
-#box {background-color: green;
+/*#box {background-color: green;
     border:1px red solid; width:auto; padding: 20px; margin:25px;}
-  
-body{margin:0;}
+  */
+
+#menu{
+  width:800px;
+  border:1px #F00 solid;
+}
+#menu ul{
+  border:1px #F00 solid;
+  width:auto;
+  /*부모만큼*/
+  margin: 10px
+}
+/*body{margin:0;}*/
 
 </style>
 
 </head>
 <body>
-  <div id="box">
+  <!-- <div id="box"> -->
     hello world
   </div>
 <!-- auto는 내 부모만 -->
@@ -23,6 +34,14 @@ body{margin:0;}
 <!--div는 block속성  -->
 <!--height auto는 컨텐츠만큼  -->
 <!--width랑 height설정 안해주면 auto  -->
+<div id="menu">
+ <ul>
+   <li>text</li>
+   <li>text</li>
+   <li>text</li>
+   <li>text</li>
+ </ul>
+</div>
 
 </body>
 </html>
