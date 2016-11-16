@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+  <head>
+   <meta charset="UTF-8">
+  <html lang="en">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>selectors</title>
+<style>
+div,ul{border:1px red solid;}
+/*1. div,ul,li*/
+/*.menu{} class*/
+/*#unit1{} id*/
+/*.menu ul{} 자식은 띄어쓰기*/
+/*.menu>ul{} 바로 있는 자식*/
+/*menu ul.subul{}*/
+/*ul.subul.list-item{}*/
+/*menu li li:first child{}*/7,8,9
+/*menu li li:last child{}*/8,9
+/*li input[type="button"]{}*/
+/*a [href="라이코스"]{}*/
+/*a[href^="라""]*/
+/*a[href*="이코"]*/
+/*  ^시작하는거*모든거$끝나면   */
+/*a[href$="이코"]*/
+/*.unit+li+li*/
+/*.unit~li{}unit이란 클래스가지고 있는 애들 다음 녀석들 li다*/
+
+
+
+
+
+</style>
+
+
+  </head>
+  <body>
+
+
+  <div>
+   <ul class="first-ul">
+     <li>text1
+       <ul class="subul">
+         <li>text1-1</li>
+         <li>text2-2</li>
+         <li class="unit">text3-3</li>
+         <li>text1-1</li>
+         <li>text2-2</li>
+         <li>text3-3</li>
+       </ul>
+     </li>
+     <li>text2
+       <ul class="subul list-item">
+         <li><input type="text"></li>
+         <li><input type="button"></li>
+         <li>text3-3</li>
+       </ul>
+     </li>
+     <li>text3
+       <ul class="testul">
+         <li><input type="text"></li>
+         <li id="unit">text2-2</li>
+         <li>text3-3
+           <ul class="testul1">
+             <li><input type="text1"></li>
+             <li id="unit1">text2-2</li>
+             <li>text3-3</li>
+             <li><input type="text1"></li>
+             <li id="unit1">text2-2</li>
+             <li>text3-3</li>
+           </ul>
+         </li>
+       </ul>
+     </li>
+   </ul>
+ </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ </body>
+ </html>
