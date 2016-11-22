@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,39 +8,42 @@
     *{margin: 0; padding: 0;}
     .wrap{width: 900px; height: 540px; border: 1px black solid;}
     .banner{width: 840px; height: 111px; border: 1px black solid; margin:0 auto;}
-    .main{width: 840px; height: 380px; border: 1px black solid; margin: 0 auto;}
-    .leftwrap{width: 596px; height:380px; border: 1px black solid; float: left;}
-    .rightwrap{width:226px; height:380px; border:  1px black solid; margin-left: 615px}
+    .main{width: 840px; height: 380px; margin: 0 auto; margin-top: 20px;}
+    .leftwrap{width: 596px; height:380px; float: left;}
+    .rightwrap{width:226px; height:380px; margin-left: 615px}
     .left1_article{width: 596px; height: 124px; }
-    .left2_article{width: 596px; height:69px; border-top: 1px black solid; }
+    .left2_article{width: 596px; height:69px; border-top: 1px black solid; margin-top: 10px;}
     .left3_article{width: 596px; height: 105px;border-top: 1px black solid;}
     .left4_article{width: 596px; height: 69px; margin-top: 10px; border-top: 1px black solid;}
-    .left1_con{width: 596px; height:67px;margin-top: 10px;}
+    .left1_con{width: 596px; height:67px;}
     .left1_con img{width: 120px; height: 67px; float: left;}
     h1{font-size: 23px; }
-    .left1_con ul li{font-size: 11px; margin-top: 5px;}
+    .left1_con ul li{font-size: 11px; margin-top: 5px; }
+    .left1_con ul{display: table-cell; vertical-align: middle;}
     .list ul{margin-top: 10px;}
+
     .list{width: 460px; height: 67px; margin-left: 150px; }
+    .list span{ position: relative; left: -5px; }
     .art1{width: 287px; height: 60px; float: left; margin-top: 10px;}
     .art2{width: 287px; height:60px; margin-left: 307px; margin-top: 10px; }
     .left2_article ul li{font-size: 13px; list-style: none; margin-left: 10px; }
     .left4_article ul li{font-size: 13px; list-style: none; margin-left: 10px; }
-    .art3{width: 287px; height: 60px; float: left; }
-    .art4{width: 287px; height:60px; margin-left: 307px; }
+    .art3{width: 287px; height: 60px; float: left; margin-top: 10px;}
+    .art4{width: 287px; height:60px; margin-left: 307px; margin-top: 10px;}
     .blue{color:#2f7bdf;}
     .left3_article img{width: 100px; height: 55.99px; margin-left: 16px; margin-top: 10px;}
     .imgnews{float: left;}
     .left3_article p{width: 100px; height: 28.59px; font-size: 9px; margin-left: 16px; color: #989da2;}
-    .rightwrap li{font-size: 13px; list-style-position: inside; padding: 5px;}
+    .rightwrap li{font-size: 13px; list-style-position: inside; }
     .rightwrap ul{padding: 0; }
-
     .rightwrap li span { position: relative; left: -18px; }
-    .list2{border-top: 1px #c00f5c solid;}
-    .imgclip img{width: 111.99px; height: 118px; padding: 0;}
+    .imgclip img{width: 111.99px; height: 118px; padding: 0; vertical-align: top; }
+    /*사진자체에 뭐가 있음 그래서 vertical-align: top;하면 간격이 없어짐*/
     .imgclip li{list-style: none; display: inline-block;}
     .imgclip li{margin: 0; padding: 0;}
     .imgclip ul{margin: 0; padding: 0; font-size: 0px;}
-
+    .imgclip{margin-top: 25px;}
+    .list2{margin-top: 5px;}
 </style>
 
 </head>
@@ -53,9 +57,9 @@
                    <span><img src="http://static.naver.net/newsstand/2016/1117/seouleconomy/151049/001.jpg" alt="" /></span>
                     <div class="list">
                     <ul>
-                        <li>100만 촛불에도 '최순실 예산' 못깎는 결정적 이유</li>
-                        <li>''세월호 속 아이들' 그들에게는 처음부터 없었다'</li>
-                        <li>"촛불집회 '132'만 참가 박원순 통쾌한 '팩트폭력'</li>
+                        <li><span>100만 촛불에도 '최순실 예산' 못깎는 결정적 이유</span></li>
+                        <li><span>'세월호 속 아이들' 그들에게는 처음부터 없었다</span></li>
+                        <li><span>"촛불집회 '132'만 참가 박원순 통쾌한 '팩트폭력'</span></li>
                      </ul>
 
                  </div>
@@ -123,11 +127,15 @@
      </div>
     </div>
             <div class="rightwrap">
+
+                <div class=""><img src="best_click.jpg" alt="" /></div>
+
+
                <div class="list2">
 
 
                <ul>
-                  <li class="blue"><span>정청래 "미르재단 로고로 사용</span></li>
+                  <li><span class="blue">정청래 "미르재단 로고로 사용</span></li>
                   <li><span>'박근혜-길라임' 소름돋는 평행 </span></li>
                   <li><span>세월호 가라앉던 그 때 간호장교</span></li>
                   <li><span>"저 혹시..."검사한테 슬쩍 물어본</span></li>
