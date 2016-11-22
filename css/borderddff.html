@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>video</title>
+<style>
+    *{margin:0; padding:0;}
+    body,html{height:100%;}
+    .intro{border:1px red solid; position:relative; height:100%;
+    }
+    .wrap{text-align:center; position: absolute; border:1px green solid; top:0; left:0; width:100%;display: table; height:100%;}
+    h1{display: table-cell; vertical-align:middle;}
+  video{ width:1920px; position:relative; left:50%; margin-left:calc( -1 * 1920px / 2)}
+</style>
+</head>
+<body>
+    <div class="intro">
+        <video width="100%" autoplay>
+            <source src="../video/pier.mp4" type="video/mp4">
+        </video>
+
+    </div>
+    <div class="wrap">
+
+        <h1>hello, video!</h1>
+
+    </div>
+</body>
+</html>
