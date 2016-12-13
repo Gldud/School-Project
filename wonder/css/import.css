@@ -1,0 +1,366 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+body {
+  margin: 0;
+  background-image: url("http://wondergirls.jype.com/images/bg-pc.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center 0;
+}
+header {
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 0 20px;
+  box-shadow: 0 2px 10px #666;
+}
+header h1 {
+  float: left;
+}
+header h1 a {
+  display: block;
+  background-image: url("http://wondergirls.jype.com/images/logo-s.png");
+  width: 104px;
+  height: 52px;
+  text-indent: -9999px;
+  font-size: 0;
+  transition: 1s;
+  margin: 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+header h1 a:hover {
+  transform: rotateY(180deg);
+}
+header nav {
+  float: right;
+}
+header nav .menu {
+  display: none;
+  height: 55px;
+  width: 200px;
+  background-color: #F28195;
+  margin-right: -20px;
+  line-height: 55px;
+  text-align: center;
+  color: #FFF;
+}
+header nav li {
+  float: left;
+  height: 100px;
+  line-height: 100px;
+}
+header nav li:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+header nav li a {
+  display: block;
+  padding: 0 18px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #F28195;
+  transition: .1s;
+  font-weight: bold inherit;
+}
+header nav li a:hover {
+  border-top: 2px #F28195 solid;
+  color: #f4c22d;
+}
+section {
+  border: 1px #F00 solid;
+}
+section .biglogo {
+  border: 1px #F00 solid;
+  width: 320px;
+  height: 320px;
+  background-image: url("http://wondergirls.jype.com/images/mainlogo.png");
+  position: absolute;
+  left: 60%;
+  top: 30%;
+  transition: 1s;
+}
+section .biglogo:hover {
+  transform: scale(1.3);
+  opacity: 0;
+}
+footer {
+  border: 1px #F00 solid;
+  height: 57px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-image: url("http://wondergirls.jype.com/images/footerbg.png");
+}
+footer a {
+  width: 115px;
+  height: 45px;
+  background-image: url("http://wondergirls.jype.com/images/jyplogo-b.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  left: 80px;
+  top: 10px;
+}
+body.nonebg {
+  background: none;
+}
+section > .title {
+  height: 60px;
+  background-color: #f4f4f4;
+  text-align: center;
+  text-transform: capitalize;
+  text-indent: -9999px;
+  font-size: 0;
+  padding: 30px 0;
+  margin-bottom: 50px;
+}
+section section.disco h2 {
+  width: 306px;
+  height: 51px;
+  background-image: url(http://wondergirls.jype.com/images/title-discography.png);
+  margin: 0 auto;
+}
+section .global-lang {
+  text-transform: uppercase;
+  width: 1000px;
+  border: 1px red solid;
+  height: 21px;
+  margin: 0 auto;
+}
+section .global-lang a {
+  border-radius: 50%;
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  background-color: #000;
+  color: #FFF;
+  font-size: 11px;
+  text-align: center;
+  vertical-align: top;
+  line-height: 20px;
+}
+section .wrap {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+section .wrap .album-thumb,
+section .wrap .album-contents {
+  border: 1px red solid;
+  display: table-cell;
+}
+section .wrap .album-thumb {
+  width: 35.2%;
+}
+section .wrap .album-thumb > img {
+  width: 100%;
+}
+section .wrap .album-thumb ol {
+  list-style-position: inside;
+}
+section .wrap .album-contents {
+  padding-left: 28px;
+  vertical-align: top;
+}
+section .wrap .album-contents h3 {
+  float: left;
+}
+section .wrap .album-contents p {
+  float: right;
+  font-size: 12px;
+}
+section .wrap .title {
+  background-image: url(http://wondergirls.jype.com/images/discography/a-titlebg.png);
+  height: 63px;
+  margin-bottom: 20px;
+  padding: 0 20px;
+  color: #FFF;
+  text-transform: capitalize;
+  line-height: 50px;
+  font-size: 1.5em;
+}
+section .album_list {
+  margin-top: 30px;
+  text-align: center;
+}
+section .album_list li {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 10px;
+}
+section .album_list li .description {
+  display: block;
+}
+section .album_list li .description span {
+  display: block;
+  text-transform: capitalize;
+}
+section .album_list li:nth-child(2) .name {
+  text-transform: uppercase;
+}
+section .album_list .list-btn a {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #CCC;
+}
+section.gallery h2 {
+  width: 306px;
+  height: 51px;
+  background-image: url(http://wondergirls.jype.com/images/title-gallery.png);
+  margin: 0 auto;
+}
+section.gallery .grid-list {
+  max-width: 769px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+section.gallery .grid-list ul {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-size: 0;
+}
+section.gallery .grid-list ul li {
+  width: 20%;
+  max-width: 150px;
+  float: left;
+}
+section.gallery .grid-list ul li img {
+  width: 100%;
+  vertical-align: top;
+}
+section.notice h2 {
+  width: 306px;
+  height: 51px;
+  background-image: url(http://wondergirls.jype.com/images/title-noti.png);
+  margin: 0 auto;
+}
+section.notice .list {
+  width: 1000px;
+  margin: 0 auto;
+  font-size: 12px;
+  line-height: 30px;
+}
+section.notice .list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+section.notice .list table thead {
+  visibility: hidden;
+}
+section.notice .list table td,
+section.notice .list table th {
+  border-bottom: 1px #D4D3D3 solid;
+  padding: 4px 0;
+}
+section.notice .list table tr {
+  background-color: #FCFCFC;
+  font-weight: bold;
+}
+section.notice .list table tr > td:first-child {
+  text-align: center;
+  color: #D4D3D3;
+}
+section.notice .list table tr > td:nth-child(3) {
+  text-align: center;
+  color: #D4D3D3;
+}
+section.notice .list table tr:first-child {
+  background-color: #F8F5F2;
+}
+section.notice .list table tr:first-child td:first-child {
+  color: #000;
+}
+section.notice .list table tr:first-child td:nth-child(2) {
+  color: #05AFF5;
+}
+section.notice .list table tr:first-child td:nth-child(3) {
+  color: #000;
+}
+section.notice .list table tr:nth-child(2) {
+  border-bottom: 3px #D4D3D3 solid;
+  background-color: white;
+  font-weight: normal;
+}
+section.notice .list table tr:nth-child(2) div {
+  margin-left: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+section.notice .list table tr:nth-child(2) div p {
+  text-align: left;
+  line-height: 20px;
+  color: #000;
+}
+section.notice .list-nav {
+  text-align: center;
+}
+section.notice .list-nav li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+}
+@media screen and (max-width: 769px) {
+  body {
+    background-image: url("http://wondergirls.jype.com/images/bg-720.jpg");
+    background-position: center center;
+  }
+  header {
+    height: 55px;
+  }
+  header nav .menu {
+    display: block;
+  }
+  header nav ul {
+    width: 200px;
+    position: absolute;
+    display: none;
+  }
+  header nav ul li {
+    float: none;
+    border: 1px #F00 solid;
+    display: block;
+    height: 55px;
+    line-height: 55px;
+  }
+  header nav ul li a {
+    transition: .1s;
+    border-left: 0px #f4c22d solid;
+  }
+  header nav ul li a:hover {
+    border-top: 0;
+    border-left: 5px #f4c22d solid;
+  }
+  section .biglogo {
+    top: 10%;
+    left: 50%;
+    margin-left: -160px;
+    transform: scale(0.8);
+  }
+  section.gallery .grid-list {
+    max-width: 480px;
+    overflow: hidden;
+  }
+  section.gallery .grid-list ul {
+    overflow: hidden;
+  }
+  section.gallery .grid-list ul li {
+    width: 33.3%;
+    display: inline-block;
+  }
+}

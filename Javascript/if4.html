@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script type="text/javascript">
+        
+        
+        var nameArr = [];
+        var scoreArr = [];
+        
+        var max_user = prompt('	학생의 수를 입력해주세요');
+        var check = confirm(max_user+"인원이 맞습니까?")
+        
+        if(check){
+            
+            for(var i=0;i<max_user;i++){
+                var name = prompt('이름을입력하세요');
+                var score = prompt('점수를입력하세요');
+                nameArr.unshift(name);
+                scoreArr.unshift(score);
+            }
+            
+            document.write(nameArr + "<br />" +scoreArr)
+            var nexts = confirm('입력정보가 맞습니까?');
+            
+            if(nexts){
+                console.log('반 전체 평균을 산출합니다.');
+                var score = 0;
+                
+                
+                for(i=0;i<scoreArr.length;i++){
+                    
+                    score += Number(scoreArr[i]);}
+                     document.write(score);
+                    var average = score/max_user;
+                   document.write(average);
+                   
+                    if(average >= 0  && average < 20){
+                        document.write("가");
+                        
+                    }
+                    else if(average >= 20 && average < 40){
+                        document.write("양");
+                    }
+                    else if(average >= 40 && average < 60){
+                        document.write("미");
+                        
+                    }
+                    else if(average >= 60 && average < 80){
+                        document.write("우");
+                    }
+                    else if(average >= 80 && average <= 100){
+                        document.write("수");
+                    }
+               
+                
+                
+                 //for(var i = 0 in scoreArr){
+                    //score += Number(scoreArr[i]);
+                       
+                //}
+                
+                //var sss = score/max_user;
+                
+                
+                
+                
+               //document.write('반전체 평균은 '+sss+'점입니다')
+                
+            
+               
+               
+               
+               
+               
+               
+               
+               
+               
+              
+                
+                
+            }else if(!nexts){
+                alert('프로그램을 종료합니다')
+            }
+            
+            
+            
+            
+            
+            console.log(nameArr,scoreArr)
+            
+            
+            
+            
+        }else if(!check){
+            console.log('re');
+        }
+        
+        
+        
+        
+    </script>
+</head>
+<body>
+    
+    
+    
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script type="text/javascript">
+        
+        var cardDeck = [];
+        var cardModel = ['♠','♣','♥','◆']  
+        var cardBox = []; 
+
+           function cardArrange(){
+               cardDeck = [];
+            for(i=0; i<4; i++){
+                for(j=1; j<=13; j++){
+                     switch(j){
+                        case 1: 
+                            cardDeck.push(cardModel[i]+"A");
+                            break;
+                        case 11 : 
+                            cardDeck.push(cardModel[i]+"J");
+                            break;
+                        case 12 : 
+                            cardDeck.push(cardModel[i]+"Q");
+                            break;
+                        case 13 : 
+                            cardDeck.push(cardModel[i]+"K");
+                            break;
+                        default : 
+                            cardDeck.push(cardModel[i]+j);
+                           break;
+                    }
+                }
+           
+            }
+            console.log(cardDeck);
+        }
+
+           function caseBox(){
+               
+               for(i=0;i<3;i++){
+
+                cardSelector()
+               
+            //      var cardRandom = Math.floor(Math.random() * cardDeck.length);
+            //   cardBox.push(cardDeck[cardRandom]);
+            //   cardDeck.splice(cardRandom,1);
+             
+                }
+                console.log(cardBox);
+           }
+         
+         function cardSelector(){
+             var cardRandom4 = Math.floor(Math.random() * cardDeck.length);
+              cardBox.push(cardDeck[cardRandom4]);
+              cardDeck.splice(cardRandom4,1);
+             console.log(cardBox);
+         }
+           
+         
+          function reset(){
+             
+             cardArrange()
+                    cardBox=[]; 
+    
+               }
+          
+              
+          
+           
+     </script>
+</head>
+<body>
+    <button type="button" onclick="cardArrange()">카드정리</button>
+     <button type="button" onclick="caseBox()">카드생성</button>
+       <button type="button" onclick="cardSelector()">콜</button>
+         <button type="button" onclick="reset()">다이</button>
+       
+</body>
+</html>

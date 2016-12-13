@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        var card = {
+            card_number:13,
+            card_deck:[],
+            shape:['♠','♣','♥','◆'],
+            caseBox:[],
+            theorem:function(){
+                   for(var i=0 in this.shape){
+                     for(var j=1; j <= this.card_number; j++){
+                        switch(j) {
+                                   case 1 : 
+                                       this.card_deck.push(card.shape[i]+"A");
+                                       break;
+                                   case 11 : 
+                                       this.card_deck.push(card.shape[i]+"J");
+                                       break;
+                                   case 12 : 
+                                       this.card_deck.push(card.shape[i]+"Q");
+                                       break;
+                                   case 13 : 
+                                       this.card_deck.push(card.shape[i]+"K");
+                                       break;
+                                   default : 
+                                   this.card_deck.push(card.shape[i]+j);
+                                   break;
+                        }
+                     
+                    }
+                   }
+                   console.log(this.card_deck)
+            }
+        }
+         function arrange(){
+             var cardRan1 = Math.floor(Math.random() * card.card_deck.length);
+             card.caseBox.push(card.card_deck[cardRan1]);
+             card.card_deck.splice(cardRan1,1);
+             var cardRan2 = Math.floor(Math.random() * card.card_deck.length);
+             card.caseBox.push(card.card_deck[cardRan2]);
+             card.card_deck.splice(cardRan2,1);
+             var cardRan3 = Math.floor(Math.random() * card.card_deck.length);
+             card.caseBox.push(card.card_deck[cardRan3]);
+             card.card_deck.splice(cardRan3,1);
+             console.log(card.caseBox);
+         }
+         
+         function cardSelector(){
+             var cardRan4 = Math.floor(Math.random() * card.card_deck.length);
+             card.caseBox.push(card.card_deck[cardRan4]);
+             card.card_deck.splice(cardRan4,1);
+             console.log(card.caseBox);
+         }
+         
+         
+         
+         
+         
+         
+          
+    </script>
+</head>
+<body>
+    <button type="button" onclick="card.theorem()">카드정리</button>
+    <button type="button" onclick="arrange()">카드분배</button>
+    <button type="button" onclick="cardSelector()">콜</button>
+    <button type="button" onclick="">다이</button>
+    
+    
+    
+    
+</body>
+</html>
